@@ -39,38 +39,19 @@ Provides correction suggestions, displays the corrected text, and gives feedback
 
 ## Project Structure
 
+text
 SpellingCorrector/
 │
-├── .idea/
-│   ├── modules.xml
-│   ├── spelling corrector application.iml
-│   └── workspace.xml
-│
-├── .pytest_cache/
-├── .vscode/
-├── hunspell-master/
-│
-├── interfaces/
-│   ├── init.py
-│   ├── idata_service.py
-│   └── ispell_service.py
-│
-├── models/
-│   ├── init.py
-│   └── word.py
-│
-├── services/
-│   ├── init.py
-│
-├── tests/
-│   ├── init.py
-│
-├── app_gui.py
-├── custom_words.txt
-├── input_reader.py
 ├── main.py
+├── processor.py
+├── spellchecker.py
+├── input_reader.py
 ├── output_writer.py
-└── spell_checker_module.py
+├── test_processor.py
+│
+├── index.dic
+└── index.aff
+
 ---
 
 ## Installation
@@ -163,6 +144,26 @@ All test cases passed successfully, confirming that the system functions correct
 
 ---
 
+## Authors
+
+- **Daniela Guray**  
+  GitHub: [@danielaguray-cpu](https://github.com/danielaguray-cpu)
+
+- **Clarice Febrero**  
+  GitHub: [@claricefebrero](https://github.com/claricefebrero)
+
+- **Maria Daphnie Gordola**  
+  GitHub: [@grdlmrdphn-cpu](https://github.com/grdlmrdphn-cpu)
+
+
+
+In Partial Fulfillment of the Requirements for the Subject **CC103 Computer Programming 2**  
+Bachelor of Science in Information Technology  
+CPU – Final Project Submission  
+With the supervision of **Professor John Mark Gabrentina**
+
+
+---
 ## Developers
 
 Developed as a course project for Object-Oriented Programming (OOP), applying software engineering principles and testing methodologies to create a reliable and user-friendly spelling correction system.

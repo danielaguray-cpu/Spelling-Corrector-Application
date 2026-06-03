@@ -1,63 +1,149 @@
 # Spelling Corrector Application
 
-## 📖 Description
-The Spelling Corrector Application is a standalone Python project designed to help users efficiently detect and correct spelling errors in digital text.  
-It operates entirely offline using the **Hunspell dictionary system**, ensuring reliable performance without requiring internet connectivity.  
-The application emphasizes simplicity, usability, and accessibility, with a clean graphical interface and structured Input → Process → Output workflow.
-
-Through this tool, users can improve writing accuracy, minimize typographical mistakes, and enhance communication quality in academic, professional, and personal tasks.
+## Description
+The Spelling Corrector Application is a desktop-based tool developed in Python that helps users identify and correct spelling errors in words, sentences, and paragraphs. The application uses a Hunspell dictionary (index.dic and index.aff) to detect misspelled words and provide appropriate correction suggestions. It features a user-friendly graphical interface that makes spell checking simple and efficient.
 
 ---
 
-## 🎯 Rationale
-This project was proposed to address common difficulties in producing error‑free written text:
-- Frequent spelling mistakes and typographical errors
-- Reliance on online tools that require internet access
-- Time‑consuming manual proofreading
+## Features
 
-By automating spelling detection and correction, the application saves time, improves clarity, and boosts productivity.
+### Feature 1: Input
+Allows users to enter text that will be checked for spelling errors.
+
+### Feature 2: Spelling Detection
+Identifies misspelled words by comparing the entered text with the dictionary.
+
+### Feature 3: Suggestion and Feedback
+Provides correction suggestions, displays the corrected text, and gives feedback about the spelling check results.
 
 ---
 
-## 🗂 Project Structure
+## Technologies Used
+
+- Python
+- Tkinter (GUI)
+- Hunspell Dictionary
+- Pytest (Unit Testing)
+- Object-Oriented Programming (OOP)
+
+---
+
+## OOP Concepts Implemented
+
+- Encapsulation
+- Polymorphism
+- Dependency Injection
+- Loose Coupling
+
+---
+
+## Project Structure
+
+text
 SpellingCorrector/
 │
-├── interfaces/  
-├── models/  
-├── services/  
-├── tests/  
-├── main.py  
-├── spell_checker_module.py  
-├── app_gui.py  
-└── output_writer.py  
+├── main.py
+├── processor.py
+├── spellchecker.py
+├── input_reader.py
+├── output_writer.py
+├── test_processor.py
+│
+├── index.dic
+└── index.aff
 
 ---
 
-## ⚙️ Features
-- **Text Input** – Enter words, sentences, or paragraphs for checking  
-- **Spelling Detection** – Identify misspelled words using Hunspell  
-- **Suggestions & Feedback** – Provide correction recommendations  
-- **Output Writer** – Save corrected text and reports to `.txt` files  
-- **Offline Capability** – Works without internet connection  
-- **Automated Testing** – Pytest unit tests for reliability  
+## Installation
+
+### 1. Download or Clone the Project
+
+Place all project files inside a folder named:
+
+text
+SpellingCorrector
+
+### 2. Install Required Libraries
+
+pip install hunspell
+pip install pytest
+
+### 3. Add Dictionary Files
+
+Place the following files in the project folder:
+
+text
+index.dic
+index.aff
 
 ---
 
-## 🛠 OOP & SOLID Principles
-- **Encapsulation** – Private attributes and controlled access  
-- **Abstraction** – Interfaces for dictionary and correction services  
-- **Polymorphism** – Flexible suggestion algorithms  
-- **Modularity** – Clear separation into models, services, interfaces, UI, and tests  
-- **SOLID** – Single Responsibility, Open/Closed, Liskov Substitution, Interface Segregation, Dependency Inversion  
+## Running the Application
+
+Open a terminal in the project folder and run:
+
+python main.py
 
 ---
 
-## 🌍 Sustainable Development Goal (SDG)
-Supports **SDG 4: Quality Education** by improving spelling accuracy, literacy, and communication skills for learners and professionals.
+## Running the Tests
+
+Execute the following command:
+
+pytest -v
+
+Expected result:
+
+text
+========================
+3 passed
+========================
 
 ---
 
-## ▶️ How to Run
-1. Install dependencies:
-   ```bash
-   pip install pytest hunspell
+## Sample Usage
+
+### Input
+
+text
+the goverment is changing tac rules tomorow
+
+### Corrected Output
+
+text
+the government is changing tax rules tomorrow
+
+### Suggestions
+
+text
+goverment → government
+tac → tax
+tomorow → tomorrow
+
+---
+
+## Sustainable Development Goal (SDG)
+
+### SDG 4: Quality Education
+
+This application supports SDG 4 by helping users improve their spelling, writing accuracy, and language skills. It serves as an educational tool that assists students and learners in producing error-free written content and developing better communication abilities.
+
+---
+
+## Testing
+
+The application was tested using:
+
+- Functional Testing
+- User Interface Testing
+- Manual Testing
+- Error Handling Testing
+- Automated Unit Testing using Pytest
+
+All test cases passed successfully, confirming that the system functions correctly and reliably.
+
+---
+
+## Developers
+
+Developed as a course project for Object-Oriented Programming (OOP), applying software engineering principles and testing methodologies to create a reliable and user-friendly spelling correction system.

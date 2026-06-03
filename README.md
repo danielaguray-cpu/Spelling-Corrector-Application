@@ -39,19 +39,38 @@ Provides correction suggestions, displays the corrected text, and gives feedback
 
 ## Project Structure
 
-text
 SpellingCorrector/
 │
-├── main.py
-├── processor.py
-├── spellchecker.py
-├── input_reader.py
-├── output_writer.py
-├── test_processor.py
+├── .idea/
+│   ├── modules.xml
+│   ├── spelling corrector application.iml
+│   └── workspace.xml
 │
-├── index.dic
-└── index.aff
-
+├── .pytest_cache/
+├── .vscode/
+├── hunspell-master/
+│
+├── interfaces/
+│   ├── init.py
+│   ├── idata_service.py
+│   └── ispell_service.py
+│
+├── models/
+│   ├── init.py
+│   └── word.py
+│
+├── services/
+│   ├── init.py
+│
+├── tests/
+│   ├── init.py
+│
+├── app_gui.py
+├── custom_words.txt
+├── input_reader.py
+├── main.py
+├── output_writer.py
+└── spell_checker_module.py
 ---
 
 ## Installation

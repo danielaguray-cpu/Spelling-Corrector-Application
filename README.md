@@ -103,7 +103,6 @@ text: the government is changing tax rules tomorrow
 
 ### Suggestions
 
-text
 goverment → government  
 tac → tax  
 tomorow → tomorrow

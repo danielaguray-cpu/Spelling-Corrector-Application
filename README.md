@@ -99,8 +99,7 @@ text: the goverment is changing tac rules tomorow
 
 ### Corrected Output
 
-text
-the government is changing tax rules tomorrow
+text: the government is changing tax rules tomorrow
 
 ### Suggestions
 
@@ -144,13 +143,12 @@ All test cases passed successfully, confirming that the system functions correct
 - **Maria Daphnie Gordola**  
   GitHub: [@grdlmrdphn-cpu](https://github.com/grdlmrdphn-cpu)
 
-
+---
 
 In Partial Fulfillment of the Requirements for the Subject **CC103 Computer Programming 2**  
 Bachelor of Science in Information Technology  Under the Course of Bachelor of Science in Information Technology at Sorsogon State University Bulan Campus. With the supervision of **Professor John Mark Gabrentina**
 
-
 ---
-## Developers
 
-Developed as a course project for Object-Oriented Programming (OOP), applying software engineering principles and testing methodologies to create a reliable and user-friendly spelling correction system.
+
+

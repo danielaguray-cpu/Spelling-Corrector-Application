@@ -24,21 +24,23 @@ Provides correction suggestions, displays the corrected text, and gives feedback
 - Tkinter (GUI)
 - Hunspell Dictionary
 - Pytest (Unit Testing)
-- Object-Oriented Programming (OOP)
 
 ---
 
 ## OOP Concepts Implemented
 
-- Encapsulation
+### This project demonstrates core Object-Oriented Programming Principles:
+
+- Encapsulation 
 - Polymorphism
 - Dependency Injection
 - Loose Coupling
+- Abstraction: 
 
 ---
 
 ## Project Structure
-SpellingCorrector/
+SpellingCorrector/  
 │  
 ├── .idea/  
 │   ├── modules.xml  
@@ -73,31 +75,6 @@ SpellingCorrector/
 
 ---
 
----
-## Installation
-
-### 1. Download or Clone the Project
-
-Place all project files inside a folder named:
-
-text
-SpellingCorrector
-
-### 2. Install Required Libraries
-
-pip install hunspell
-pip install pytest
-
-### 3. Add Dictionary Files
-
-Place the following files in the project folder:
-
-text
-index.dic
-index.aff
-
----
-
 ## Running the Application
 
 Open a terminal in the project folder and run:
@@ -112,21 +89,13 @@ Execute the following command:
 
 pytest -v
 
-Expected result:
-
-text
-========================
-3 passed
-========================
-
 ---
 
 ## Sample Usage
 
 ### Input
 
-text
-the goverment is changing tac rules tomorow
+text: the goverment is changing tac rules tomorow
 
 ### Corrected Output
 
@@ -136,8 +105,8 @@ the government is changing tax rules tomorrow
 ### Suggestions
 
 text
-goverment → government
-tac → tax
+goverment → government  
+tac → tax  
 tomorow → tomorrow
 
 ---
@@ -178,9 +147,7 @@ All test cases passed successfully, confirming that the system functions correct
 
 
 In Partial Fulfillment of the Requirements for the Subject **CC103 Computer Programming 2**  
-Bachelor of Science in Information Technology  
-CPU – Final Project Submission  
-With the supervision of **Professor John Mark Gabrentina**
+Bachelor of Science in Information Technology  Under the Course of Bachelor of Science in Information Technology at Sorsogon State University Bulan Campus. With the supervision of **Professor John Mark Gabrentina**
 
 
 ---

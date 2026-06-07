@@ -46,23 +46,23 @@ Provides correction suggestions, displays the corrected text, and gives feedback
 Spelling-Corrector-Application/
 │
 ├── interfaces/
-│ ├── init.py
-│ ├── idata_service.py
-│ └── ispell_service.py
+│   ├── __init__.py
+│   ├── idata_service.py
+│   └── ispell_service.py
 │
 ├── models/
-│ ├── init.py
-│ └── word.py
+│   ├── __init__.py
+│   └── word.py
 │
 ├── services/
-│ ├── init.py
-│ └── spell_service.py
+│   ├── __init__.py
+│   └── spell_service.py
 │
 ├── tests/
-│ ├── init.py
-│ ├── test_spell_service.py
-│ ├── test_algorithms.py
-│ └── test_processor.py
+│   ├── __init__.py
+│   ├── test_spell_service.py
+│   ├── test_algorithms.py
+│   └── test_processor.py
 │
 ├── app_gui.py
 ├── main.py

@@ -1,4 +1,3 @@
-```markdown
 # Spelling Corrector Application
 
 ## Description
@@ -33,130 +32,108 @@ Provides correction suggestions, displays the corrected text, and gives feedback
 
 ## OOP Concepts Implemented
 
-- **Encapsulation** - Data hiding within classes
-- **Polymorphism** - Interface-based design (IDataService, ISpellService)
-- **Dependency Injection** - Services are injected where needed
-- **Loose Coupling** - Interfaces separate concerns
-- **Abstraction** - Abstract base classes define contracts
+- Encapsulation - Data hiding within classes
+- Polymorphism - Interface-based design (IDataService, ISpellService)
+- Dependency Injection - Services are injected where needed
+- Loose Coupling - Interfaces separate concerns
+- Abstraction - Abstract base classes define contracts
 
 ---
 
 ## Project Structure
 
-```
 Spelling-Corrector-Application/
-│
-├── interfaces/
-│   ├── __init__.py
-│   ├── idata_service.py
-│   └── ispell_service.py
-│
-├── models/
-│   ├── __init__.py
-│   └── word.py
-│
-├── services/
-│   ├── __init__.py
-│   └── spell_service.py
-│
-├── tests/
-│   ├── __init__.py
-│   ├── test_spell_service.py
-│   ├── test_algorithms.py
-│   └── test_processor.py
-│
-├── app_gui.py
-├── main.py
-├── processor.py
-├── definitions.py
-├── dictionary.txt
-├── input_reader.py
-├── output_writer.py
-├── spell_checker_module.py
-└── README.md
-```
+|
++-- interfaces/
+|   +-- __init__.py
+|   +-- idata_service.py
+|   +-- ispell_service.py
+|
++-- models/
+|   +-- __init__.py
+|   +-- word.py
+|
++-- services/
+|   +-- __init__.py
+|   +-- spell_service.py
+|
++-- tests/
+|   +-- __init__.py
+|   +-- test_spell_service.py
+|   +-- test_algorithms.py
+|   +-- test_processor.py
+|
++-- app_gui.py
++-- main.py
++-- processor.py
++-- definitions.py
++-- dictionary.txt
++-- input_reader.py
++-- output_writer.py
++-- spell_checker_module.py
++-- README.md
 
 ---
 
 ## Installation
 
-### Prerequisites
+Prerequisites:
 - Python 3.11 or higher
 - pip (Python package manager)
 
-### Steps
+Steps:
 
 1. Clone the repository:
-```bash
-git clone https://github.com/danielaguray-cpu/Spelling-Corrector-Application.git
-cd Spelling-Corrector-Application
-```
+   git clone https://github.com/danielaguray-cpu/Spelling-Corrector-Application.git
+   cd Spelling-Corrector-Application
 
 2. Install dependencies:
-```bash
-pip install pytest
-```
+   pip install pytest
 
 3. Run the application:
-```bash
-python main.py
-```
+   python main.py
 
 ---
 
 ## Running the Application
 
-### GUI Mode (Default)
-```bash
-python main.py
-```
+GUI Mode (Default):
+   python main.py
 
 ---
 
 ## Running the Tests
 
-```bash
-pytest -v
-```
+   pytest -v
 
 ---
 
 ## Sample Usage
 
-### Input
-```
-the goverment is changing tac rules tomorow
-```
+Input:
+   the goverment is changing tac rules tomorow
 
-### Corrected Output
-```
-the government is changing tax rules tomorrow
-```
+Corrected Output:
+   the government is changing tax rules tomorrow
 
-### Suggestions
-```
-goverment → government
-tac → tax
-tomorow → tomorrow
-```
+Suggestions:
+   goverment -> government
+   tac -> tax
+   tomorow -> tomorrow
 
-### Another Example
-```
-Input:  He stood in the centir of the room!
-Output: He stood in the center of the room!
-```
+Another Example:
+   Input:  He stood in the centir of the room!
+   Output: He stood in the center of the room!
 
 ---
 
 ## Algorithms Implemented
 
-| Algorithm | Purpose |
-|-----------|---------|
-| SymSpell Delete Index | O(1) candidate generation for typos |
-| Levenshtein Distance | Edit distance calculation with early exit |
-| N-Gram (Bigram) Context Scoring | Resolves ambiguous corrections using context |
-| Bounded Levenshtein | Performance optimization for large dictionaries |
-| Hash Set Dictionary Lookup | O(1) correct word verification |
+- SymSpell Delete Index - O(1) candidate generation for typos
+- Levenshtein Distance - Edit distance calculation with early exit
+- N-Gram (Bigram) Context Scoring - Resolves ambiguous corrections using context
+- Bounded Levenshtein - Performance optimization for large dictionaries
+- Hash Set Dictionary Lookup - O(1) correct word verification
 
 ---
 
@@ -184,18 +161,17 @@ All test cases passed successfully, confirming that the system functions correct
 
 ## Authors
 
-- **Daniela Guray**  
-  GitHub: [@danielaguray-cpu](https://github.com/danielaguray-cpu)
+- Daniela Guray
+  GitHub: @danielaguray-cpu
 
-- **Clarice Febrero**  
-  GitHub: [@claricefebrero](https://github.com/claricefebrero)
+- Clarice Febrero
+  GitHub: @claricefebrero
 
-- **Maria Daphnie Gordola**  
-  GitHub: [@grdlmrdphn-cpu](https://github.com/grdlmrdphn-cpu)
+- Maria Daphnie Gordola
+  GitHub: @grdlmrdphn-cpu
 
 ---
 
-*In Partial Fulfillment of the Requirements for the Subject **CC103 Computer Programming 2**  
-Bachelor of Science in Information Technology at Sorsogon State University Bulan Campus.  
-Under the supervision of **Professor John Mark Gabrentina**.*
-```
+In Partial Fulfillment of the Requirements for the Subject CC103 Computer Programming 2
+Bachelor of Science in Information Technology at Sorsogon State University Bulan Campus.
+Under the supervision of Professor John Mark Gabrentina.

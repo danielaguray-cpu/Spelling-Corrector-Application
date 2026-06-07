@@ -1,7 +1,7 @@
 # Spelling Corrector Application
 
 ## Description
-The Spelling Corrector Application is a desktop-based tool developed in Python that helps users identify and correct spelling errors in words, sentences, and paragraphs. The application uses a Hunspell dictionary (index.dic and index.aff) to detect misspelled words and provide appropriate correction suggestions. It features a user-friendly graphical interface that makes spell checking simple and efficient.
+The Spelling Corrector Application is a desktop-based tool developed in Python that helps users identify and correct spelling errors in words, sentences, and paragraphs. The application uses advanced algorithms (SymSpell, Levenshtein distance, and n-gram context) with a 466,550-word dictionary to detect misspelled words and provide appropriate correction suggestions. It features a user-friendly graphical interface that makes spell checking simple and efficient.
 
 ---
 
@@ -11,10 +11,10 @@ The Spelling Corrector Application is a desktop-based tool developed in Python t
 Allows users to enter text that will be checked for spelling errors.
 
 ### Feature 2: Spelling Detection
-Identifies misspelled words by comparing the entered text with the dictionary.
+Identifies misspelled words by comparing the entered text with the dictionary using SymSpell delete index and Levenshtein distance algorithms.
 
 ### Feature 3: Suggestion and Feedback
-Provides correction suggestions, displays the corrected text, and gives feedback about the spelling check results.
+Provides correction suggestions, displays the corrected text, and gives feedback about the spelling check results using n-gram context scoring.
 
 ---
 
@@ -22,8 +22,11 @@ Provides correction suggestions, displays the corrected text, and gives feedback
 
 - Python
 - Tkinter (GUI)
-- Hunspell Dictionary
+- SymSpell Algorithm (Delete Index)
+- Levenshtein Distance
+- N-Gram Context Scoring
 - Pytest (Unit Testing)
+- 466,550-word Dictionary
 
 ---
 
@@ -31,47 +34,47 @@ Provides correction suggestions, displays the corrected text, and gives feedback
 
 ### This project demonstrates core Object-Oriented Programming Principles:
 
-- Encapsulation 
+- Encapsulation
 - Polymorphism
 - Dependency Injection
 - Loose Coupling
-- Abstraction: 
+- Abstraction
 
 ---
 
 ## Project Structure
-SpellingCorrector/  
-│  
-├── .idea/  
-│   ├── modules.xml  
-│   ├── spelling corrector application.iml  
-│   └── workspace.xml  
-│  
-├── .pytest_cache/  
-├── .vscode/  
-├── hunspell-master/  
-│  
-├── interfaces/  
-│   ├── __init__.py  
-│   ├── idata_service.py  
-│   └── ispell_service.py  
-│  
-├── models/  
-│   ├── __init__.py  
-│   └── word.py  
-│  
-├── services/  
-│   ├── __init__.py  
-│  
-├── tests/  
-│   ├── __init__.py  
-│  
-├── app_gui.py  
-├── custom_words.txt  
-├── input_reader.py  
-├── main.py  
-├── output_writer.py  
-└── spell_checker_module.py  
+Spelling-Corrector-Application/
+│
+├── interfaces/
+│ ├── init.py
+│ ├── idata_service.py
+│ └── ispell_service.py
+│
+├── models/
+│ ├── init.py
+│ └── word.py
+│
+├── services/
+│ ├── init.py
+│ └── spell_service.py
+│
+├── tests/
+│ ├── init.py
+│ ├── test_spell_service.py
+│ ├── test_algorithms.py
+│ └── test_processor.py
+│
+├── app_gui.py
+├── main.py
+├── processor.py
+├── definitions.py
+├── dictionary.txt
+├── input_reader.py
+├── output_writer.py
+├── spell_checker_module.py
+└── README.md
+
+text
 
 ---
 
@@ -79,75 +82,65 @@ SpellingCorrector/
 
 Open a terminal in the project folder and run:
 
+```bash
 python main.py
-
----
-
-## Running the Tests
-
+Running the Tests
 Execute the following command:
 
+bash
 pytest -v
-
----
-
-## Sample Usage
-
-### Input
-
-text: the goverment is changing tac rules tomorow
-
-### Corrected Output
-
-text: the government is changing tax rules tomorrow
-
-### Suggestions
-
-goverment → government  
-tac → tax  
+Sample Usage
+Input
+text
+the goverment is changing tac rules tomorow
+Corrected Output
+text
+the government is changing tax rules tomorrow
+Suggestions
+text
+goverment → government
+tac → tax
 tomorow → tomorrow
+Algorithms Implemented
+SymSpell Delete Index (O(1) candidate generation)
 
----
+Levenshtein Distance with early exit
 
-## Sustainable Development Goal (SDG)
+N-Gram (Bigram) Context Scoring
 
-### SDG 4: Quality Education
+Bounded Levenshtein for performance
 
+Hash Set Dictionary Lookup
+
+Sustainable Development Goal (SDG)
+SDG 4: Quality Education
 This application supports SDG 4 by helping users improve their spelling, writing accuracy, and language skills. It serves as an educational tool that assists students and learners in producing error-free written content and developing better communication abilities.
 
----
-
-## Testing
-
+Testing
 The application was tested using:
 
-- Functional Testing
-- User Interface Testing
-- Manual Testing
-- Error Handling Testing
-- Automated Unit Testing using Pytest
+Functional Testing
+
+User Interface Testing
+
+Manual Testing
+
+Error Handling Testing
+
+Automated Unit Testing using Pytest
 
 All test cases passed successfully, confirming that the system functions correctly and reliably.
 
----
+Authors
+Daniela Guray
+GitHub: @danielaguray-cpu
 
-## Authors
+Clarice Febrero
+GitHub: @claricefebrero
 
-- **Daniela Guray**  
-  GitHub: [@danielaguray-cpu](https://github.com/danielaguray-cpu)
+Maria Daphnie Gordola
+GitHub: @grdlmrdphn-cpu
 
-- **Clarice Febrero**  
-  GitHub: [@claricefebrero](https://github.com/claricefebrero)
-
-- **Maria Daphnie Gordola**  
-  GitHub: [@grdlmrdphn-cpu](https://github.com/grdlmrdphn-cpu)
-
----
-
-In Partial Fulfillment of the Requirements for the Subject **CC103 Computer Programming 2**  
-Bachelor of Science in Information Technology  Under the Course of Bachelor of Science in Information Technology at Sorsogon State University Bulan Campus. With the supervision of **Professor John Mark Gabrentina**
-
----
-
-
-
+In Partial Fulfillment of the Requirements for the Subject CC103 Computer Programming 2
+Bachelor of Science in Information Technology at Sorsogon State University Bulan Campus.
+Under the supervision of Professor John Mark Gabrentina.

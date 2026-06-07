@@ -1,3 +1,4 @@
+```markdown
 # Spelling Corrector Application
 
 ## Description
@@ -20,7 +21,7 @@ Provides correction suggestions, displays the corrected text, and gives feedback
 
 ## Technologies Used
 
-- Python
+- Python 3.11+
 - Tkinter (GUI)
 - SymSpell Algorithm (Delete Index)
 - Levenshtein Distance
@@ -32,17 +33,17 @@ Provides correction suggestions, displays the corrected text, and gives feedback
 
 ## OOP Concepts Implemented
 
-### This project demonstrates core Object-Oriented Programming Principles:
-
-- Encapsulation
-- Polymorphism
-- Dependency Injection
-- Loose Coupling
-- Abstraction
+- **Encapsulation** - Data hiding within classes
+- **Polymorphism** - Interface-based design (IDataService, ISpellService)
+- **Dependency Injection** - Services are injected where needed
+- **Loose Coupling** - Interfaces separate concerns
+- **Abstraction** - Abstract base classes define contracts
 
 ---
 
 ## Project Structure
+
+```
 Spelling-Corrector-Application/
 │
 ├── interfaces/
@@ -73,74 +74,128 @@ Spelling-Corrector-Application/
 ├── output_writer.py
 ├── spell_checker_module.py
 └── README.md
+```
 
-text
+---
+
+## Installation
+
+### Prerequisites
+- Python 3.11 or higher
+- pip (Python package manager)
+
+### Steps
+
+1. Clone the repository:
+```bash
+git clone https://github.com/danielaguray-cpu/Spelling-Corrector-Application.git
+cd Spelling-Corrector-Application
+```
+
+2. Install dependencies:
+```bash
+pip install pytest
+```
+
+3. Run the application:
+```bash
+python main.py
+```
 
 ---
 
 ## Running the Application
 
-Open a terminal in the project folder and run:
-
+### GUI Mode (Default)
 ```bash
 python main.py
-Running the Tests
-Execute the following command:
+```
 
-bash
+---
+
+## Running the Tests
+
+```bash
 pytest -v
-Sample Usage
-Input
-text
+```
+
+---
+
+## Sample Usage
+
+### Input
+```
 the goverment is changing tac rules tomorow
-Corrected Output
-text
+```
+
+### Corrected Output
+```
 the government is changing tax rules tomorrow
-Suggestions
-text
+```
+
+### Suggestions
+```
 goverment → government
 tac → tax
 tomorow → tomorrow
-Algorithms Implemented
-SymSpell Delete Index (O(1) candidate generation)
+```
 
-Levenshtein Distance with early exit
+### Another Example
+```
+Input:  He stood in the centir of the room!
+Output: He stood in the center of the room!
+```
 
-N-Gram (Bigram) Context Scoring
+---
 
-Bounded Levenshtein for performance
+## Algorithms Implemented
 
-Hash Set Dictionary Lookup
+| Algorithm | Purpose |
+|-----------|---------|
+| SymSpell Delete Index | O(1) candidate generation for typos |
+| Levenshtein Distance | Edit distance calculation with early exit |
+| N-Gram (Bigram) Context Scoring | Resolves ambiguous corrections using context |
+| Bounded Levenshtein | Performance optimization for large dictionaries |
+| Hash Set Dictionary Lookup | O(1) correct word verification |
 
-Sustainable Development Goal (SDG)
-SDG 4: Quality Education
+---
+
+## Sustainable Development Goal (SDG)
+
+### SDG 4: Quality Education
+
 This application supports SDG 4 by helping users improve their spelling, writing accuracy, and language skills. It serves as an educational tool that assists students and learners in producing error-free written content and developing better communication abilities.
 
-Testing
+---
+
+## Testing
+
 The application was tested using:
 
-Functional Testing
-
-User Interface Testing
-
-Manual Testing
-
-Error Handling Testing
-
-Automated Unit Testing using Pytest
+- Functional Testing
+- User Interface Testing
+- Manual Testing
+- Error Handling Testing
+- Automated Unit Testing using Pytest
 
 All test cases passed successfully, confirming that the system functions correctly and reliably.
 
-Authors
-Daniela Guray
-GitHub: @danielaguray-cpu
+---
 
-Clarice Febrero
-GitHub: @claricefebrero
+## Authors
 
-Maria Daphnie Gordola
-GitHub: @grdlmrdphn-cpu
+- **Daniela Guray**  
+  GitHub: [@danielaguray-cpu](https://github.com/danielaguray-cpu)
 
-In Partial Fulfillment of the Requirements for the Subject CC103 Computer Programming 2
-Bachelor of Science in Information Technology at Sorsogon State University Bulan Campus.
-Under the supervision of Professor John Mark Gabrentina.
+- **Clarice Febrero**  
+  GitHub: [@claricefebrero](https://github.com/claricefebrero)
+
+- **Maria Daphnie Gordola**  
+  GitHub: [@grdlmrdphn-cpu](https://github.com/grdlmrdphn-cpu)
+
+---
+
+*In Partial Fulfillment of the Requirements for the Subject **CC103 Computer Programming 2**  
+Bachelor of Science in Information Technology at Sorsogon State University Bulan Campus.  
+Under the supervision of **Professor John Mark Gabrentina**.*
+```

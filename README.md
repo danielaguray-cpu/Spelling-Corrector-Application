@@ -43,34 +43,62 @@ Provides correction suggestions, displays the corrected text, and gives feedback
 ## Project Structure
 
 Spelling-Corrector-Application/
+
 |
-+-- interfaces/
+
++-- interfaces/ 
+
 |   +-- __init__.py
+
 |   +-- idata_service.py
+
 |   +-- ispell_service.py
+
 |
+
 +-- models/
+
 |   +-- __init__.py
+
 |   +-- word.py
+
 |
+
 +-- services/
+
 |   +-- __init__.py
+
 |   +-- spell_service.py
+
 |
+
 +-- tests/
+
 |   +-- __init__.py
+
 |   +-- test_spell_service.py
+
 |   +-- test_algorithms.py
+
 |   +-- test_processor.py
+
 |
 +-- app_gui.py
+
 +-- main.py
+
 +-- processor.py
+
 +-- definitions.py
+
 +-- dictionary.txt
+
 +-- input_reader.py
+
 +-- output_writer.py
+
 +-- spell_checker_module.py
+
 +-- README.md
 
 ---
